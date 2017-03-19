@@ -1,0 +1,48 @@
+{
+  "name": "javascript-unit-tests-playground",
+  "version": "1.0.0",
+  "description": "This is a playground so i can run some javascript unit tests fast",
+  "main": "index.js",
+  "scripts": {
+    "test:jest": "jest",
+    "test:mocha": "mocha --compilers js:babel-register --recursive --colors \"./mocha/**/*.spec.js\"",
+    "test:tape": "babel-tape-runner ./tape/*.spec.js | faucet"
+  },
+  "keywords": [
+    "tap",
+    "test",
+    "assert",
+    "browser",
+    "javascript",
+    "jest",
+    "mocha",
+    "tape"
+  ],
+  "author": {
+    "name": "Fakiolas Marios",
+    "email": "m.fakiolas@hotmail.gr",
+    "url": "https://medium.com/@fakiolinho"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-jest": "^19.0.0",
+    "babel-preset-env": "^1.2.2",
+    "babel-register": "^6.24.0",
+    "babel-tape-runner": "^2.0.1",
+    "chai": "^3.5.0",
+    "faucet": "0.0.1",
+    "jest": "^19.0.2",
+    "mocha": "^3.2.0",
+    "tape": "^4.6.3"
+  },
+  "jest": {
+    "transform": {
+      ".*": "./node_modules/babel-jest"
+    },
+    "bail": true,
+    "verbose": true,
+    "testRegex": "./jest/.*.spec.js$",
+    "collectCoverage": true
+  }
+}
