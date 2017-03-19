@@ -8,7 +8,7 @@ Run following commands to get started:
 
 ```bash
 git clone https://github.com/fakiolinho/javascript-unit-tests-playground.git
-npm i && cd javascript-unit-tests-playground
+cd javascript-unit-tests-playground && npm i
 ```
 
 ## Jest Tests
